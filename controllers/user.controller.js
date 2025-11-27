@@ -173,6 +173,7 @@ export async function loginController(request,response){
     //logout controller
     export async function logoutController(request,response){
         try{
+            const userid =use
             const cookiesOption={
             httpOnly : true,
             secure: true,
