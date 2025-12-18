@@ -11,6 +11,7 @@ import categoryRouter from './route/category.route.js'
 import uploadRouter from './route/upload.router.js'
 import subCategoryRouter from './route/subCategory.route.js'
 import productRouter from './route/product.route.js'
+import cartRouter from './route/cart.route.js'
 
 const app = express()
 app.use(cors({
