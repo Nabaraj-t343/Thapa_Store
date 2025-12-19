@@ -37,9 +37,7 @@ response.json({
     message: "server is running " + PORT
 })
 })
-
-app.use("/api/user", userRouter);
-app.use(express.static("public"));
+app.use('/api/user',userRouter)
 
 connectDB().then(()=>{
 app.listen(PORT,()=>{
