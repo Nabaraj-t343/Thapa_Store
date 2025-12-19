@@ -38,6 +38,7 @@ response.json({
 })
 })
 app.use('/api/user',userRouter)
+app.use("/api/category",categoryRouter)
 
 connectDB().then(()=>{
 app.listen(PORT,()=>{
