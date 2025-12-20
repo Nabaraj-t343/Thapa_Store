@@ -39,6 +39,7 @@ response.json({
 })
 app.use('/api/user',userRouter)
 app.use("/api/category",categoryRouter)
+app.use("/api/file",uploadRouter)
 
 connectDB().then(()=>{
 app.listen(PORT,()=>{
