@@ -40,6 +40,7 @@ response.json({
 app.use('/api/user',userRouter)
 app.use("/api/category",categoryRouter)
 app.use("/api/file",uploadRouter)
+app.use("/api/subcategory",subCategoryRouter)
 
 connectDB().then(()=>{
 app.listen(PORT,()=>{
