@@ -43,6 +43,7 @@ app.use("/api/file",uploadRouter)
 app.use("/api/subcategory",subCategoryRouter)
 app.use("/api/product",productRouter)
 app.use("/api/cart",cartRouter)
+app.use("/api/address",addressRouter)
 
 connectDB().then(()=>{
 app.listen(PORT,()=>{
